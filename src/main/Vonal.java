@@ -60,4 +60,40 @@ public class Vonal {
 
     }
     
+    public void setEltolas(int eltolas) throws Exception {
+        if (eltolas < 1) {
+            throw new Exception("Hiba, eltolas sikertlen, csak pozitiv ertek lehet");
+        }
+        this.eltolas = eltolas;
+
+    }
+
+    public void setSzin(Szinek szin) {
+        this.szin = szin;
+    }
+
+    public void setStilus(Stilusok stilus) {
+        this.stilus = stilus;
+    }
+
+    public int getEltolas() {
+
+        return eltolas;
+    }
+
+    public Szinek getSzin() {
+
+        return szin;
+    }
+
+    public Stilusok getStilus() {
+
+        return stilus;
+    }
+
+    public String info() {
+        
+        return "hossz: " + HOSSZ + " eltolas: " + eltolas + " Szin: " + szin + " stilus: " + stilus;
+    }
+    
 }
