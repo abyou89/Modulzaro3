@@ -10,6 +10,9 @@ public class MindentTudoGepProgram {
         MindentTudoGep gep = new MindentTudoGep();
         gep.setLotto();
         gep.getLotto();
-  
+        gep.setTotoMerkozes();
+        gep.getTotoMerkozes();
+        gep.setToto();
+        gep.getToto();
     }
 }
